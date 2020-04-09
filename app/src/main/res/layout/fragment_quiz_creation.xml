@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg0"
+    tools:context=".QuizCreationFragment">
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="347dp"
+        android:layout_height="45dp"
+        android:background="@drawable/edit_text_overlay"
+        app:layout_constraintBottom_toBottomOf="@+id/creation_number"
+        app:layout_constraintStart_toStartOf="@+id/creation_number"
+        app:layout_constraintTop_toTopOf="@+id/creation_number" />
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="347dp"
+        android:layout_height="45dp"
+        android:background="@drawable/edit_text_overlay"
+        app:layout_constraintBottom_toBottomOf="@+id/creation_level"
+        app:layout_constraintEnd_toEndOf="@+id/creation_level"
+        app:layout_constraintStart_toStartOf="@+id/creation_level"
+        app:layout_constraintTop_toTopOf="@+id/creation_level" />
+
+    <View
+        android:layout_width="347dp"
+        android:layout_height="45dp"
+        android:background="@drawable/edit_text_overlay"
+        app:layout_constraintBottom_toBottomOf="@+id/creation_description"
+        app:layout_constraintEnd_toEndOf="@+id/creation_description"
+        app:layout_constraintStart_toStartOf="@+id/creation_description"
+        app:layout_constraintTop_toTopOf="@+id/creation_description" />
+
+    <View
+        android:id="@+id/view3"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/edit_text_overlay"
+        app:layout_constraintBottom_toBottomOf="@+id/creation_name"
+        app:layout_constraintEnd_toEndOf="@+id/creation_name"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/creation_name"
+        app:layout_constraintTop_toTopOf="@+id/creation_name"
+        app:layout_constraintVertical_bias="0.18" />
+
+    <TextView
+        android:id="@+id/creation_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Community Quiz Creation"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/creation_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="32dp"
+        android:backgroundTint="#ffffff"
+        android:ems="10"
+        android:hint="Quiz Title"
+        android:inputType="textPersonName"
+        android:textAlignment="textStart"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/creation_title" />
+
+    <Button
+        android:id="@+id/creation_choose_image"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/button_custom_1"
+        android:text="Choose Thumbnail Image"
+        android:textColor="#FFFFFF"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view" />
+
+    <Button
+        android:id="@+id/creation_next"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/button_custom_1"
+        android:text="Next"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view" />
+
+    <EditText
+        android:id="@+id/creation_description"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+        android:backgroundTint="#ffffff"
+        android:ems="10"
+        android:hint="Quiz Description"
+        android:inputType="textPersonName"
+        android:textAlignment="textStart"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/creation_name" />
+
+    <EditText
+        android:id="@+id/creation_level"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+        android:backgroundTint="#ffffff"
+        android:ems="10"
+        android:hint="Quiz Level"
+        android:inputType="textPersonName"
+        android:textAlignment="textStart"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/creation_description" />
+
+    <EditText
+        android:id="@+id/creation_number"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+        android:backgroundTint="#ffffff"
+        android:ems="10"
+        android:hint="Quiz Question Count"
+        android:inputType="number"
+        android:textAlignment="textStart"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/creation_level" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

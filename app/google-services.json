@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "192102831812",
+    "firebase_url": "https://train1-b5dd9.firebaseio.com",
+    "project_id": "train1-b5dd9",
+    "storage_bucket": "train1-b5dd9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:192102831812:android:5f5442abf9240c8a651b91",
+        "android_client_info": {
+          "package_name": "com.example.train1"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "192102831812-ofnn51prs53rsop2bjmalabfscnuqudt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAFPZ1tgbEx1u-U3oDV_gC9n5aPemEjStM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "192102831812-ofnn51prs53rsop2bjmalabfscnuqudt.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
